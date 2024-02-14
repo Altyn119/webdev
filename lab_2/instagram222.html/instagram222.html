@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instagram</title>    
+    <style>
+        body {
+            background-color: #FAFAFA;
+            font-family: sans-serif;
+        }
+
+        #main {
+            margin-left: 75%;
+            width: 500px;
+        }
+
+        #pic {
+            float: left;
+            margin-top: -120px;
+        }
+
+        .table {
+            margin-top: 10px;
+            margin-left: 50%;
+            margin-right: 200px;
+            background-color: #FAFAFA;
+            text-align: center;
+        }
+
+        .logo {
+            margin-left: 0;
+            width: 200px;
+            height: 55px;
+            margin-top: 30px;
+            margin-bottom: -20px;
+        }
+
+        .rightside {
+            margin-left: -550px;
+        }
+
+        .OR {
+            text-align: center;
+            color: grey;
+        }
+
+        .text {
+            font-family: 'Times New Roman', serif;
+            font-size: 15px;
+            line-height: 20px;
+            color: blue; /* изменен цвет текста на синий */
+        }
+
+        #downloads {
+            width: 140px;
+            height: 40px;
+            margin-left: 24.5%;
+            margin-top: 30%;
+        }
+
+        .partone {
+            background-color: white;
+            width: 350px;
+            height: 50px;
+            font-size: 15px;
+            margin-top: 35px;
+            border: 2px solid whitesmoke;
+        }
+
+        img {
+            width: 400px;
+            height: 600px;
+            margin-left: 220px;
+            margin-top: 100px;
+        }
+
+        .input {
+            width: 250px;
+            height: 35px;
+            font-size: 13px;
+            padding-left: 8px;
+            border-radius: 5px;
+            color: grey;
+            background-color: ghostwhite;
+            border: 2px solid whitesmoke;
+        }
+
+        .facebook {
+            width: 150px;
+            font-weight: bold;
+            height: 40px;
+            font-size: 15px;
+            background-color: #3897F0;
+            color: #FBFDFF;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+
+        .signbutton {
+            width: 265px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-top: 7px;
+            background-color: #3897F0;
+            color: #FBFDFF;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .list-el {
+            font-size: 12px;
+            margin-top: 10px;
+            float: left;
+            padding: 0px 5px;
+            color: #778880;
+            cursor: pointer;
+        }
+
+        .copyright {
+            clear: both;
+            float: left;
+            color: #999;
+        }
+
+        .foot-wrapper {
+            width: 100%;
+            min-width: 980px;
+            
+            margin-top: 400px;
+        }
+        .custom-text {
+            color: rgb(5, 5, 138);
+        }
+
+        .content {
+            width: 600px;
+            margin: auto;
+            line-height: 30px;
+        }
+
+        .rights {
+            margin-left: 44px;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="pic">
+            <img src="КартинкаИнст.jpg">
+        </div>
+        <div id="main">
+            <div class="table">
+                <div class="rightside">
+                    <table class="partone">
+                        <tr>
+                            <td>
+                                <img src="instagram.png " class="logo" alt="instagram">
+                            
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <p class="logoInst";> <input type="text" class="input" autofocus placeholder=" Электронный адрес или номер телефона"> </p>
+                        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" class="input" autofocus placeholder=" Пароль">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="OR">
+                                    ИЛИ
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <p class="custom-text"; > <img src="data:image/png;base64,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" alt="Facebook" 
+                                style="width: 35px;
+                                position: absolute;
+                               color: #003569;
+                               height: 35px;
+                               margin-top: -9px;
+                               margin-left: -50px;"  > Войти через Facebook </p>
+                               </td>
+                            </tr>
+
+                    
+                            <tr>
+                                <td>
+                                    <p class="custom-text">Забыли пароль?</p>
+                                </td>
+                            </tr>
+                    </table>
+                    <table class="partone">
+                        <tr>
+                            <td>
+                                <p class="parttwo">
+                                    У вас еще нет аккаунта? <a href="#"> Зарегистрироваться</a>
+   
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <p style="color:black; margin-left: -36%; margin-bottom:-29px;">
+                        Установите приложение.
+                    </p>
+                    <table>
+                        <tr>
+                            <td><img id="downloads" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png"></td>
+                                <a href=""><a>
+                                    <td><img id="downloads" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png"></td>
+                                    <a href="">
+
+                                </a>
+
+                            
+                            </td>
+                        </tr>
+
+
+                    </table>
+        
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <div class="foot-wrapper">
+        <div class="content">
+            <div>
+                <ul>
+                    <li class="list-el">О НАС</li>
+                    <li class="list-el">ПОДДЕРЖКА</li>
+                    <li class="list-el">ПРЕССА</li>
+                    <li class="list-el">API</li>
+                    <li class="list-el">ВАКАНСИИ</li>
+                    <li class="list-el">КОНФИДЕНЦИАЛЬНОСТЬ</li>
+                    <li class="list-el">УСЛОВИЯ</li>
+                    <li class="list-el">ДИРЕКТОРИИ</li>
+                    <li class="list-el">ПРОФИЛИ</li>
+                    <li class="list-el">ХЕШТЕГИ</li>
+                    <li class="list-el">ЯЗЫК</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rights">
+            <div class="content">
+                <span class="copyright">© 2019 INSTAGRAM</span>
+            </div>
+        </div>
+    </div>
+</html>
+
