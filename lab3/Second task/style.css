@@ -1,0 +1,66 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://img.freepik.com/free-vector/watercolor-paper-with-floral-design_53876-97360.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais);
+    background-size: cover;
+    background-position: center;
+  }
+  .container1 {
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: inherit;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+  }
+  #todolist1 {
+    color: rgb(13, 142, 255);
+    font-weight: bold;
+    margin-left: 10px;
+  
+  }
+  .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  #input {
+      border-radius: 5px;
+      font-size: 1.1em;
+      height: 30px;
+      width:700px;
+      border: 1px solid #324ab8;
+  }
+  #button {
+    border-radius: 15px;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(212, 248, 4);
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+  }
+  #list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #list li {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #f10303;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #list li.completed {
+    text-decoration: line-through;
+  }
