@@ -1,0 +1,12 @@
+
+<div class="test">
+    <ul class="headers">
+        <li routerLinkActive="active">
+            <a href="#">Меню</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['/product']">Предложения</a>
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>
