@@ -1,6 +1,6 @@
 
 import { Component, Input } from '@angular/core';
-import { products2 } from 'C:/Games/WebDev/Lab 5/Lab 5/src/app/products2';
+import { products2 } from 'C:/Users/User/Desktop/webdev/lab_5/lab 5/src/app/products2';
 
 
 @Component({

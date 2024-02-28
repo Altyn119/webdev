@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { products3 } from 'C:/Games/WebDev/Lab 5/Lab 5/src/app/products3';
-
-
+import { products3 } from 'C:/Users/User/Desktop/webdev/lab_5/lab 5/src/app/products3';
 @Component({
   selector: 'app-product-page3',
   templateUrl: './product-page3.component.html',

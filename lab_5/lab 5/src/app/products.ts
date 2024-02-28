@@ -4,7 +4,7 @@ export const products=[{
     link:"https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000",
     imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hc2/h05/46392662458398/apple-iphone-13-128gb-cernyj-102298404-1-Container.jpg',
     rating:5,
-    url:"https://t.me/zhakoooooooo12345/13",
+    url:"https://t.me/+hCKPVNRDWlwzZDAy",
     numberOfLikes:0
     },
     {
@@ -13,7 +13,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h30/hd2/64487157760030/xiaomi-redmi-note-10-pro-8-gb-128-gb-seryi-107221005-1.jpg',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/14",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -23,7 +23,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h26/h48/49613711835166/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279-1.jpg',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/15",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -33,7 +33,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/samsung-galaxy-a23-6-gb-128-gb-chernyi-104348541/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hfe/h14/49792685113374/smartfon-samsung-galaxy-a23-sm-a235fzkkskz-128gb-black-104348541-1.jpg',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/17",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -43,7 +43,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h30/hd2/64487157760030/xiaomi-redmi-note-10-pro-8-gb-128-gb-seryi-107221005-1.jpg',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/18",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -53,7 +53,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/samsung-galaxy-a33-5g-6-gb-128-gb-chernyi-104398547/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h98/h3f/49894748028958/samsung-galaxy-a33-5g-6-gb-128-gb-cernyj-104398547-1.jpg',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/19",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -63,7 +63,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-fioletovyi-106363319/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/img/m/p/h7b/hdc/64428132991006.jpg?format=preview-medium',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/20",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -73,7 +73,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/apple-iphone-14-128gb-goluboi-106363150/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/img/m/p/hbc/h02/64481569701918.jpg?format=preview-medium',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/21",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -83,7 +83,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/samsung-galaxy-a53-5g-6-gb-128-gb-chernyi-104253225/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/img/m/p/h6f/h8d/64381860446238.jpg?format=preview-medium',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/23",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
     ,
@@ -93,7 +93,7 @@ export const products=[{
         link:"https://kaspi.kz/shop/p/samsung-galaxy-a03-core-2-gb-32-gb-mednyi-105772530/?c=750000000",
         imgURL:'https://resources.cdn-kaspi.kz/img/m/p/h72/hf1/64525646626846.jpg?format=preview-medium',
         rating:5,
-        url:"https://t.me/zhakoooooooo12345/22",
+        url:"https://t.me/+hCKPVNRDWlwzZDAy",
         numberOfLikes:0
     }
         
