@@ -1,0 +1,20 @@
+.cards{
+    width: 95%;
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin:10px;
+    background: rgb(255, 196, 196);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    width: 250px;
+    max-height: 530px;
+}
+.img{
+    width: 250px;
+}
+
+
+
