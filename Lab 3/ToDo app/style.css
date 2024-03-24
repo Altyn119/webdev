@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+.outtask{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 5%;
+}
