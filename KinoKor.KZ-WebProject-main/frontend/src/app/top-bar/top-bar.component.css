@@ -1,0 +1,66 @@
+.head{
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  background: #4b4f56;
+  column-gap: 26px;
+  padding-right: 50px;
+  height: 80px;
+}
+
+.head .buttons .profiles{
+  width: 36px;
+  height: 34px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.head h1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Helvetica sans-serif;
+  color: #c4dce8;
+}
+
+.login-button{
+  border-radius: 4px;
+  background: #81d4fa;
+  margin-top: 15px;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: right;
+  border: 1px solid #eeebee;
+  box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52); /*тень*/
+}
+
+.login-button:hover{
+  background: #00A5D2;
+}
+
+.register-button{
+  border-radius: 4px;
+  justify-content: right;
+  padding: 10px;
+  margin-top: 15px;
+  margin-right: 5px;
+  background: #81d4fa;
+  font-size: 12px;
+  border: 1px solid #eeebee;
+  font-weight: 600;
+  box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52); /*тень*/
+}
+
+.register-button:hover{
+  background: #00A5D2;
+}
+
+fieldset{
+  display: block;
+
+}

@@ -1,0 +1,13 @@
+<h1>Album Detail</h1>
+<div *ngIf="album" class="info_wp">
+  <a routerLink="/albums" class="back"> < Return</a>
+  <p>ID: {{ album.id }}</p>
+  <div class="title_wp">
+    <p>Title: </p>
+    <input type="text" [(ngModel)]="album.title" />
+    <button (click)="saveAlbum()">Save</button>
+  </div>
+  <a routerLink="/albums/{{ album.id }}/photos">All photos</a>
+ 
+
+</div>

@@ -1,0 +1,40 @@
+.info_wp {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.back {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   /* identical to box height, or 150% */
+
+   text-transform: uppercase;
+   /* Light / Black */
+
+   color: #11263C
+}
+
+input {
+   background: #FFFFFF;
+   border: 1px solid #D9D9D9;
+   border-radius: 12px;
+   padding: 5px 10px
+}
+
+.title_wp {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+
+.title_wp button{
+   padding: 5px 10px;
+   background-color: rgb(252, 168, 11);
+   border: 1px solid #db8989;
+   border-radius: 12px;
+   color: #add49e;
+   cursor: pointer;
+}

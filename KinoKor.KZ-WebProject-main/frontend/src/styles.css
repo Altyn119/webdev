@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-content: center;
+}
+
+body {
+  margin: 0 0 50px;
+  background: #141414;
+  font-family: Nunito, sans-serif;;
+}
+
+
+
+/*.container {*/
+/*  white-space: pre-line;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*}*/
+
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+

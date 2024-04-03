@@ -1,0 +1,7 @@
+<h1>Album Photos</h1>
+<a routerLink="/albums/{{ albumId }}"> < Return</a>
+<ul>
+  <li *ngFor="let photo of photos">
+    <img [src]="photo.url" [alt]="photo.title">
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+<div class="head">
+  <h1 *ngIf="!isLogged" (click)="goToHome()">Kinokor</h1>
+  <div class="buttons">
+    <button *ngIf="!isLogged" (click)="loginButton()" class="login-button">Login</button>
+    <button *ngIf="isLogged" (click)="logout()" class = "register-button">Logout</button>
+    <img *ngIf="isLogged" src="assets/movies/profile.png" class="profiles" (click)="goToProfile()">
+    <button *ngIf="!isLogged" (click)="registerButton()" class="register-button">Register</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="cont">
+  <input [(ngModel)]="searchText" name="searchText" type="search" placeholder="Search for movies..." aria-label="Search">
+</div>
+<div class="cont2">
+  <div class="cont3">
+    <span class="count">
+      {{movies.length}} Movies
+    </span>
+  </div>
+  <hr color="white">
+  <div class="movie_list">
+    <div *ngFor="let movie of movies | filter: searchText" class="movie">
+      <a [routerLink]="['/movies', movie.id]">
+        <figure>
+          <img src="assets/movies/{{movie.img}}" alt="movie poster" class="movie-poster">
+        </figure>
+        <p class="title">{{movie.name}}</p>
+        <p class="rate">Rate: {{movie.rate}}</p>
+      </a>
+    </div>
+  </div>
+</div>
+

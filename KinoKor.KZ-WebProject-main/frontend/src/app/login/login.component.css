@@ -1,0 +1,177 @@
+.box{
+  max-width: 300vh;
+  max-height: 120vh;
+  overflow: hidden;
+}
+
+.image{
+  margin-top: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.box .cont{
+  margin-top: 250px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  width: 350px;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 30px;
+  padding-bottom: 9px;
+  background: #dddddd;
+  position: absolute;
+}
+
+.box .cont input{
+  padding:15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(219, 219, 219);
+  margin-top: 10px;
+  width: 100%;
+}
+
+.box .cont button{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom:15px;
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(71, 175, 255);
+  text-align: center;
+  font-family: Helvetica Arial sans-serif;
+}
+
+.box .cont button:hover{
+  background: #81d4fa;
+}
+
+.first ul{
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.first li {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.first li:hover {
+  background-color: #f9f9f9;
+}
+
+.first li div {
+  margin-right: 1rem;
+}
+
+.first li button {
+  padding: 0.5rem;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.first li button:hover {
+  background-color: #3e8e41;
+}
+
+.login fieldset {
+  dispay: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.login label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login input[type="text"], textarea, select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.login button {
+  background-color: #333333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #4b4f56;
+}
+
+.second fieldset {
+  dispay: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.second label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.second input[type="text"], textarea, select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.second button {
+  background-color: #333333;
+  margin-right: 10px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.second button:hover {
+  background-color: #4b4f56;
+}

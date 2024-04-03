@@ -1,0 +1,124 @@
+<ng-container *ngIf="!isLogged">
+  <div class="box">
+    <img class="image" src="assets/login.jpg">
+    <div class="cont">
+      <h1>Log in</h1>
+      <div>
+        <label for="username">
+          Username
+        </label>
+        <input id="username" type="text" placeholder="Username" [(ngModel)]="username">
+      </div>
+
+      <div>
+        <label for="password">
+          Password
+        </label>
+        <input id="password" type="password" placeholder="Password" [(ngModel)]="password">
+      </div>
+      <button class="button" type="submit" (click)="login()">Login</button>
+      <p>Don't have any account? <a [routerLink]="['/register']">Click here</a></p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isLogged">
+  <h2>Movies</h2>
+  <div class="first">
+    <ul>
+      <li *ngFor="let movie of movies">
+        <div>{{ movie.name }}</div>
+        <div>{{ movie.description }}</div>
+        <button (click)="onSelect(movie)">Edit</button>
+        <button (click)="deleteMovie(movie.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="login">
+    <fieldset>
+      <label>Movie name: </label>
+      <input [(ngModel)]="newMovie.name" type="text">
+
+      <label>Movie description: </label>
+      <textarea id="description" name="description" [(ngModel)]="newMovie.description"></textarea>
+
+      <label>Movie genre: </label>
+      <select id="genre" name="genre" [(ngModel)]="newMovie.genre">
+        <option value="4">Боевик</option>
+        <option value="5">Криминал</option>
+        <option value="6">Триллер</option>
+        <option value="7">Комедия</option>
+        <option value="8">Детектив</option>
+        <option value="9">Фэнтези</option>
+        <option value="10">Мелодрама</option>
+        <option value="11">Приключение</option>
+        <option value="12">Фантастика</option>
+        <option value="13">Драма</option>
+        <option value="14">Спорт</option>
+        <option value="15">Ужастик</option>
+        <option value="16">Action</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input type="text" id="rate" name="rate" [(ngModel)]="newMovie.rate">
+
+      <label for="length">Length:</label>
+      <input type="text" id="length" name="length" [(ngModel)]="newMovie.length">
+
+      <label for="img">Image URL:</label>
+      <input type="text" id="img" name="img" [(ngModel)]="newMovie.img">
+
+      <label for="cover">Cover URL:</label>
+      <input type="text" id="cover" name="cover" [(ngModel)]="newMovie.cover">
+
+      <label for="like">Like Number:</label>
+      <input type="text" id="like" name="like" [(ngModel)]="newMovie.like">
+
+      <button (click)="addMovie()">Add movie</button>
+    </fieldset>
+  </div>
+
+  <div *ngIf="selectedMovie" class="second">
+    <h2>Edit movie</h2>
+    <fieldset>
+      <label>Movie name: </label>
+      <input [(ngModel)]="selectedMovie.name" type="text">
+
+      <label>Movie description: </label>
+      <textarea [(ngModel)]="selectedMovie.description"></textarea>
+
+      <label>Movie genre: </label>
+      <select [(ngModel)]="selectedMovie.genre">
+        <option value="4">Боевик</option>
+        <option value="5">Криминал</option>
+        <option value="6">Триллер</option>
+        <option value="7">Комедия</option>
+        <option value="8">Детектив</option>
+        <option value="9">Фэнтези</option>
+        <option value="10">Мелодрама</option>
+        <option value="11">Приключение</option>
+        <option value="12">Фантастика</option>
+        <option value="13">Драма</option>
+        <option value="14">Спорт</option>
+        <option value="15">Ужастик</option>
+        <option value="16">Action</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input type="text" id="rate1" name="rate" [(ngModel)]="selectedMovie.rate">
+
+      <label for="length">Length:</label>
+      <input type="text" id="length1" name="length" [(ngModel)]="selectedMovie.length">
+
+      <label for="img">Image URL:</label>
+      <input type="text" id="img1" name="img" [(ngModel)]="selectedMovie.img">
+
+      <label for="cover">Cover URL:</label>
+      <input type="text" id="cover1" name="cover" [(ngModel)]="selectedMovie.cover">
+
+      <button (click)="updateMovie()">Update movie</button>
+      <button (click)="onSelect(null)">Cancel</button>
+    </fieldset>
+  </div>
+</ng-container>

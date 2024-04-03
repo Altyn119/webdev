@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   border: none;
+   background: none;
+
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   max-width: 1800px;
+   margin: 0 auto;
+   background: #F9F9F9;
+}
+
+h1 {
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 20px;
+   /* identical to box height, or 167% */
+
+   text-transform: uppercase;
+
+   /* Light / White T4 */
+
+   color: rgba(66, 47, 138, 0.87);
+   margin-bottom: 22px;
+}

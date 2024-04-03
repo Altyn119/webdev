@@ -1,0 +1,18 @@
+.box{
+  max-width: 300vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.video{
+  position: relative;
+  padding: 56.25%;
+}
+
+.video_media{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
