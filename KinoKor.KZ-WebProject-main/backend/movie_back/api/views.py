@@ -10,30 +10,30 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def genres_list(request):
     genres = Genre.objects.all()
     serializer = GenreSerializer(genres, many=True)
     return Response(serializer.data)
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def genres_movies(request, genre_id):
     try:
         movies = Movie.objects.filter(genre=genre_id)
     except Movie.DoesNotExist as e:
-        return JsonResponse({'message': str(e)}, status=400)
+        return JsonResponse({"message": str(e)}, status=400)
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
 
-@api_view(['GET', 'POST'])
+@api_view(["GET", "POST"])
 def movies_list(request):
-    if request.method == 'GET':
+    if request.method == "GET":
         movies = Movie.objects.all()
         serializer = MovieSerializer(movies, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-    elif request.method == 'POST':
+    elif request.method == "POST":
         serializer = MovieSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -42,12 +42,12 @@ def movies_list(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def movies_detail(request, movie_id):
     try:
         movie = Movie.objects.get(id=movie_id)
     except Movie.DoesNotExist as e:
-        return JsonResponse({'message': str(e)}, status=400)
+        return JsonResponse({"message": str(e)}, status=400)
     serializer = MovieSerializer(movie)
     return Response(serializer.data)
 
@@ -91,6 +91,7 @@ class CommentsListAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class CommentDetailAPIView(APIView):
     def get_object(self, pk):
         try:
@@ -114,7 +115,7 @@ class CommentDetailAPIView(APIView):
     def delete(self, request, movie_id=None, pk=None):
         comment = self.get_object(pk)
         comment.delete()
-        return Response({'message': 'deleted'}, status=status.HTTP_204_NO_CONTENT)
+        return Response({"message": "deleted"}, status=status.HTTP_204_NO_CONTENT)
 
 
 class MovieModelViewSet(viewsets.ModelViewSet):

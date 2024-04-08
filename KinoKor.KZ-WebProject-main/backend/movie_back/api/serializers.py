@@ -10,7 +10,18 @@ class GenreSerializer(serializers.Serializer):
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'description', 'rate', 'length', 'img', 'cover', 'like', 'genre')
+        fields = (
+            "id",
+            "name",
+            "description",
+            "rate",
+            "length",
+            "img",
+            "cover",
+            "like",
+            "genre",
+        )
+
 
 class UserSerializer(serializers.Serializer):
     name = serializers.CharField(read_only=True)
@@ -22,11 +33,12 @@ class UserSerializer(serializers.Serializer):
     status = serializers.BooleanField()
 
     def update(self, instance, validated_data):
-        instance.status = validated_data['status']
+        instance.status = validated_data["status"]
         instance.save()
         return instance
 
+
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comment;
-        fields = ('id', 'username', 'description', 'movie')
+        model = Comment
+        fields = ("id", "username", "description", "movie")

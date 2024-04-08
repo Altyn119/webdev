@@ -8,53 +8,81 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Genre',
+            name="Genre",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=300)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=300)),
             ],
             options={
-                'verbose_name': 'Genre',
-                'verbose_name_plural': 'Genres',
+                "verbose_name": "Genre",
+                "verbose_name_plural": "Genres",
             },
         ),
         migrations.CreateModel(
-            name='User',
+            name="User",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=300)),
-                ('surname', models.CharField(max_length=300)),
-                ('username', models.CharField(max_length=300)),
-                ('email', models.CharField(max_length=300)),
-                ('password', models.CharField(max_length=300)),
-                ('img', models.CharField(max_length=300)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=300)),
+                ("surname", models.CharField(max_length=300)),
+                ("username", models.CharField(max_length=300)),
+                ("email", models.CharField(max_length=300)),
+                ("password", models.CharField(max_length=300)),
+                ("img", models.CharField(max_length=300)),
             ],
             options={
-                'verbose_name': 'User',
-                'verbose_name_plural': 'Users',
+                "verbose_name": "User",
+                "verbose_name_plural": "Users",
             },
         ),
         migrations.CreateModel(
-            name='Movie',
+            name="Movie",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=300)),
-                ('description', models.TextField(default='')),
-                ('rate', models.CharField(max_length=300)),
-                ('length', models.CharField(max_length=300)),
-                ('img', models.CharField(max_length=300)),
-                ('cover', models.CharField(max_length=300)),
-                ('like', models.IntegerField(default=0)),
-                ('genre', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.genre')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=300)),
+                ("description", models.TextField(default="")),
+                ("rate", models.CharField(max_length=300)),
+                ("length", models.CharField(max_length=300)),
+                ("img", models.CharField(max_length=300)),
+                ("cover", models.CharField(max_length=300)),
+                ("like", models.IntegerField(default=0)),
+                (
+                    "genre",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="api.genre"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Movie',
-                'verbose_name_plural': 'Movies',
+                "verbose_name": "Movie",
+                "verbose_name_plural": "Movies",
             },
         ),
     ]
